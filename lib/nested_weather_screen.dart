@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:flutter_json_serializable/constants.dart';
-import 'package:flutter_json_serializable/models/open_weather/old_nested_weather.dart';
+import 'package:flutter_json_serializable/models/open_weather/constants.dart';
+import 'package:flutter_json_serializable/models/old_nested_weather.dart';
 
 class NestedWeatherScreen extends StatelessWidget {
   Future<OldNestedWeather> getWeahter() async {
