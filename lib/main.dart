@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_json_serializable/flat_weather_screen.dart';
+import 'package:flutter_json_serializable/nested_weather_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,6 +45,20 @@ class MyHomePage extends StatelessWidget {
                   );
                 },
                 child: Text('Flat Data Structure'),
+              ),
+              SizedBox(height: 20),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return NestedWeatherScreen();
+                      },
+                    ),
+                  );
+                },
+                child: Text('Nested Data Structure'),
               )
             ],
           ),
